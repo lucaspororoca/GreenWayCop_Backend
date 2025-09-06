@@ -1,0 +1,99 @@
+2025-08-10T13:57:57.008Z [[31merror[39m]: uncaughtException: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\auth.service.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\auth.controller.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\auth.routes.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+Error: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\auth.service.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\auth.controller.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\auth.routes.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\auth.service.js:2:13)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-08-10T13:58:19.358Z [[31merror[39m]: uncaughtException: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\auth.service.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\auth.controller.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\auth.routes.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+Error: Cannot find module 'jsonwebtoken'
+Require stack:
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\auth.service.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\auth.controller.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\auth.routes.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\auth.service.js:2:13)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-08-10T14:16:21.708Z [[31merror[39m]: uncaughtException: Cannot find module 'axios'
+Require stack:
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\map.service.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\map.controller.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\map.routes.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+Error: Cannot find module 'axios'
+Require stack:
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\map.service.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\map.controller.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\map.routes.js
+- C:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\map.service.js:2:15)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-08-10T14:37:13.748Z [[31merror[39m]: uncaughtException: Cannot find module 'axios'
+Require stack:
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\map.service.js
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\map.controller.js
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\map.routes.js
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+Error: Cannot find module 'axios'
+Require stack:
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\map.service.js
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\controllers\map.controller.js
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\routes\map.routes.js
+- c:\Users\lucas\Desktop\Projetos\GreenWayVop30\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (c:\Users\lucas\Desktop\Projetos\GreenWayVop30\src\services\map.service.js:1:15)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-08-10T14:40:55.493Z [[31merror[39m]: uncaughtException: express is not defined
+ReferenceError: express is not defined
+    at Object.<anonymous> (c:\Users\lucas\Desktop\Projetos\GreenWayVop30\tempCodeRunnerFile.js:3:13)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49

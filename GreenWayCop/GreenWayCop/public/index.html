@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenWay COP30 - Mobilidade Sustentável</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            background: radial-gradient(circle at center, #006b3b 0%, #003d1f 100%);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main-header {
+            background-color: rgba(0, 57, 31, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .logo i {
+            font-size: 2rem;
+            color: #00d26a;
+            margin-right: 0.5rem;
+        }
+        
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+        }
+        
+        .features {
+            padding: 5rem 0;
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+        
+        .feature-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 3.5rem;
+            color: #00d26a;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .stats {
+            padding: 5rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #00d26a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .main-footer {
+            background-color: rgba(0, 57, 31, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: auto;
+        }
+        
+        .btn-primary {
+            background-color: #00d26a;
+            border-color: #00d26a;
+            color: #00391f;
+            font-weight: 600;
+            border-radius: 12px;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #00b85c;
+            border-color: #00b85c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 210, 106, 0.3);
+        }
+        
+        .btn-outline-light {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 10px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: white;
+            color: #003d1f;
+            border-color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .feature-card {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="logo">
+                    <i class="bi bi-globe2"></i>
+                    <span>COP30 GreenWay</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="login.html" class="btn btn-outline-light me-2">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="registro.html" class="btn btn-primary">Registrar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Encontre o caminho mais sustentável</h1>
+                <p>Calcule rotas otimizadas usando transporte público, bicicletas ou caminhadas para reduzir sua pegada de carbono durante a COP30 em Belém.</p>
+                <a href="registro.html" class="btn btn-primary btn-lg">Comece Agora</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-geo-alt feature-icon"></i>
+                        <h3>Rotas Inteligentes</h3>
+                        <p>Encontre o trajeto mais eficiente entre os locais da COP30, considerando tempo, distância e impacto ambiental.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-tree feature-icon"></i>
+                        <h3>Baixo Carbono</h3>
+                        <p>Opte por modais de transporte que reduzam sua emissão de CO2 e contribuam para um evento mais sustentável.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge feature-icon"></i>
+                        <h3>Tempo Real</h3>
+                        <p>Informações atualizadas sobre tráfego, disponibilidade de transportes públicos e condições das vias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">25K+</div>
+                        <div class="stat-label">Participantes</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">Eventos</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Dias de Conferência</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">195</div>
+                        <div class="stat-label">Países</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 COP30 GreenWay. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

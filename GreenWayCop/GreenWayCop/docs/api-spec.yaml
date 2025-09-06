@@ -1,0 +1,83 @@
+openapi: 3.0.0
+info:
+  title: GreenWay COP30 API
+  version: 1.0.0
+  description: API para cálculo de rotas sustentáveis
+
+servers:
+  - url: http://localhost:3000
+    description: Servidor local
+
+paths:
+  /api/auth/login:
+    post:
+      summary: Autenticação de usuário
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Token JWT
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+
+  /api/mapa:
+    post:
+      summary: Calcula rota entre pontos
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                localizacao:
+                  type: object
+                  properties:
+                    latitude:
+                      type: number
+                    longitude:
+                      type: number
+                destino:
+                  type: object
+                  properties:
+                    idDestino:
+                      type: integer
+                transporte:
+                  type: string
+                  enum: [driving, walking, bicycling, transit]
+      responses:
+        '200':
+          description: Dados da rota
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  routes:
+                    type: array
+                    items:
+                      type: object
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

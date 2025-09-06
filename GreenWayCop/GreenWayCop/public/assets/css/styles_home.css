@@ -1,0 +1,221 @@
+body {
+  background: radial-gradient(circle at center, #006b3b 0%, #003d1f 100%);
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Fundo verde escuro */
+.custom-navbar {
+  background-color: #00391f;
+}
+
+/* Logo */
+.logo-icon {
+  font-size: 2rem;
+  color: #00d26a;
+}
+.logo-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.logo-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  color: white;
+  margin: 0 10px;
+}
+.navbar-nav .nav-link:hover {
+  color: #00d26a;
+}
+
+/* Ícones */
+.nav-icon {
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 15px;
+}
+.nav-icon:hover {
+  color: #00d26a;
+}
+
+/* Bolinha de notificação */
+.badge-notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* Estilo para a seção hero */
+.lead {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilo para os botões */
+.custom-btn {
+  border-radius: 12px;
+  padding: 12px 30px;
+  font-weight: bold;
+}
+.btn-success {
+  background-color: #00d26a;
+  border-color: #00d26a;
+}
+.btn-success:hover {
+  background-color: #00b057;
+  border-color: #00b057;
+}
+
+/* Estilo para o dropdown de programação */
+.dropdown-menu {
+  background-color: #00391f;
+  border: none;
+  border-radius: 12px;
+}
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover {
+  background-color: #006b3b;
+}
+
+/* Estilo para os cards de estatísticas */
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.stat-card h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para os ícones dos cards */
+.icon-lg {
+  font-size: 3rem;
+  color: #00d26a; /* Cor verde padrão para os ícones */
+}
+
+/* Estilo para o Card de Destaque */
+.card-destaque {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  max-width: 800px;
+  width: 100%;
+}
+.card-destaque h3 {
+  font-weight: bold;
+}
+
+/* Wrapper para o ícone de Destaque */
+.destaque-icon-wrapper {
+  background-color: #00d26a;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+/* Botão com outline */
+.custom-btn-outline {
+  border-radius: 12px;
+  padding: 12px 30px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+.custom-btn-outline:hover {
+  background-color: white;
+  color: #003d1f;
+}
+
+/* Estilo para a legenda de trânsito */
+.dot-traffic {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Painel do Mapa e Sidebar */
+.map-panel,
+.sidebar-panel {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.map-panel {
+  flex: 3; /* Ocupa 3/4 do espaço em telas grandes */
+}
+
+.sidebar-panel {
+  flex: 1; /* Ocupa 1/4 do espaço em telas grandes */
+}
+
+/* Placeholder para o mapa */
+.map-placeholder {
+  background-color: #004d28;
+  border-radius: 15px;
+  height: 400px; /* Altura do mapa, ajuste conforme necessário */
+  position: relative;
+}
+
+.map-buttons .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 10px;
+}
+
+.map-buttons .btn-outline-light.active,
+.map-buttons .btn-outline-light:hover {
+  background-color: #00d26a;
+  border-color: #00d26a;
+  color: #fff;
+}
+
+.map-footer {
+  background-color: #003d1f;
+  border-radius: 10px;
+}
+
+/* Estilo para os itens da lista na sidebar */
+.list-group-item {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o alerta de trânsito fixo */
+.alert-transtio-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
